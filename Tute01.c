@@ -4,8 +4,20 @@
 
 #include <stdio.h>
 
-int main() {
-  
+int main() 
+{
+    int i;
+    float mark, sum=0, avg;
+
+    printf("Enter Marks obtained in 2 Subjects\n ");
+    for(i=0; i<2; i++)
+    {
+        scanf("%f", &mark);
+        sum = sum+mark;
+    }
+    avg = sum/5;
+    printf("\nAverage Mark = %0.2f", avg);
+
   return 0;
 }
 
